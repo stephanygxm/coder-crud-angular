@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Novo Porduto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <!-- matInput é uma diretiva de atributo que mexe no estilo/comportamento -->
+            <!-- [(ngModell)] é uma diretiva de atributo e com two way data binding-->
+            <!-- product.name está dentro do product-create.component.ts -->
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createProduct()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

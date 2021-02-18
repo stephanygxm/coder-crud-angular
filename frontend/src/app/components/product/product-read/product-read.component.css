@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+}
+
+.edit {
+    margin-right: 10px;
+}
+
+/* classe edit que dentro tem um i (vai editar o i que está dentro da classe edit) */
+.edit > i {
+    color: #d9cd26;
+}
+
+.delete > i {
+    color: #e35e6b;
+}
